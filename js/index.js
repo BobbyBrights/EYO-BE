@@ -1,7 +1,11 @@
 $( document ).ready(function(){
     let height = $(window).height();
+    let width = $(window).width();
+
     console.log(height);
-    $("#home-sec1").css("height",height);
+    $("#get-form").css("width",width);
+    $("#get-form").css("height",height);
+    $("#homepage-section3").css("height",height);
     $("#homepage-section1 img").css("height",height);
     $(".button-collapse").sideNav();
     $('ul.tabs').tabs();

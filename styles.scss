@@ -4,6 +4,16 @@ $ice-blue: #FAFBFB;
 $peru: #C85A39;
 $light-blue: #98C4D1;
 
+#logo{
+   background-image: url('img/EYO LOGO.jpg');
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 50px;
+   position: absolute;
+   top: 8px;
+   right: 0;
+   width: 50px;
+}
 nav{
     background: rgba($color: #000000, $alpha: 0.7);
     box-shadow: 0 0 0 0;
@@ -31,17 +41,37 @@ nav{
     }
 }
 
+.side-nav{
+    z-index: 2000;
+    background: $teal;
+
+    li{
+        z-index: inherit;
+        color: white;
+        a{
+            color: white;
+        }
+    }
+}
+
+#sidenav-overlay{
+    //opacity: 0;
+    z-index: -1;
+    //display: none;
+}
+
 body{
     height: 100%;
     background: $ice-blue;
+    
 
     h2{
-        font-family: "GothamRoundedBook",sans-serif;
-        font-size: 24px;
+        font-family: "GothamBold",sans-serif;
+        font-size: 40px;
         text-align: center;
         font-weight: bold;
         margin-bottom: 5%;
-        color: #1C0221;
+        color: rgb(100, 100, 100);
     }
 }
 
@@ -89,6 +119,7 @@ body{
 }
 
 #homepage-section3{
+    position: relative;
     margin-top: 5%;
     .col:last-child{
         height: 350px;
@@ -115,25 +146,61 @@ body{
         height: auto;
         padding: 1%;
         overflow: hidden !important;
-        background: transparent;
+        position: relative;
+        background: $teal;
+        overflow: hidden;
+        z-index: 1;
+        // background: white;
+        // background-image: url('img/bled-2582655_1920.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+
+        &::before{
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+            background-image: url('img/bled-2582655_1920.jpg');
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+        //background: $teal;
+        //opacity: 0.4;
+        margin-top: 10%;
         li{
             display: block;
             //width: 100%;
-            //height: 30px;
-            border: 1px solid;
+            height: 60px;
+            background: white;
+            border-bottom: 1px solid;
             overflow: hidden !important;
             background: transparent;
             color: black;
+            color: white;
+            z-index: 10;
 
             a{
                 font-size: 13px;
                 font-family: "GothamRoundedLight",sans-serif;
                 text-align: left;
                 color: black;
+                color: white;
+                //color: white;
                 
                 h6{
                     font-size: 13px;
                     padding: 0;
+                    font-family: "GothamRoundedBook",sans-serif;
                     //margin: 0;
                 }
                 p{
@@ -152,49 +219,104 @@ body{
     }
 
     #tab-content{
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        z-index: -1;
+        left: 25%;
+        background: $teal;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        //background-image: url("img/pex5.jpeg");
+
         
         // filter:blur(1px);
         // -webkit-filter:blur(1px);
-        // background: white;
+        //// background: white;
         
         // border: 1px solid;
 
-        .col{
-            background-image: url("img/pex5.jpeg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: relative;
-            width: 100%;
-            height: 100%;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            opacity: 0;
-            animation: fadeIn 1s forwards ease;
-            p{
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                background: rgba(0,0,0,0.5);
-                z-index: 2000;
-                width: 100%;
-                height: 50px;
-            }
+        // .col{
+        //     //background-image: url("img/pex5.jpeg");
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        //     position: relative;
+        //     width: 100%;
+        //     height: 100%;
+        //     color: white;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: flex-start;
+        //     opacity: 0;
+        //     animation: fadeIn 1s forwards ease;
+        //     p{
+        //         position: absolute;
+        //         bottom: 0;
+        //         left: 0;
+        //         background: rgba(0,0,0,0.5);
+        //         z-index: 2000;
+        //         width: 100%;
+        //         height: 50px;
+        //     }
             
+        // }
+
+        div{
+            // height: 100%;
+            // display: flex;
+            width: 50%;
+            height: 60%;
+            padding: 2%;
+            //background: rgba(18,96,151,0.6);
+            // position: absolute;
+            // left: 60%;
+            // top: 50%;
+            //border: 1px solid black;
+
+            button{
+                color:white;
+                background: $peru;
+            }
+
+            h6{
+                font-size: 12px;
+                font-family: "GothamRoundedMedium",sans-serif;
+                color: white;
+                text-transform: uppercase;
+                margin-bottom: 2%;
+                letter-spacing: 0;
+            }
+            p{
+                width: 90%;
+                font-size: 11px;
+                //line-height: 10px;
+                letter-spacing: 0px;
+                color: white;
+                font-family: "GothamRoundedLight",sans-serif;
+            }
         }
-        #test1,#test3{
-            background-image: url("img/pex5.jpeg");
-        }
-        #test2,#test4{
-            background-image: url("img/pex4.jpeg");
-        }
+        // #test1,#test3{
+        //     background-image: url("img/pex5.jpeg");
+        // }
+        // #test2,#test4{
+        //     background-image: url("img/pex4.jpeg");
+        // }
     }
 }
 
 #homepage-section4{
     margin-top: 10%;
     padding: 0 5%;
+
+    .l4{
+        background-image: url('img/eyo-cross.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 400px;
+        
+    }
     
     .hexagon{
         display: inline-block;
@@ -302,6 +424,16 @@ body{
     }
 }
 
+#get-section1{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-style: hidden;
+
+    #get-form{
+        min-height: 100%;
+        padding-bottom: 10%;
+    }
+}
 
 //--------------------------------------TEST----------------------------------------
 #home-sec1{

@@ -26,7 +26,9 @@
         <div id=homepage-section1 class="carousel carousel-slider" data-indicators="true">
             <nav>
                 <div class="nav-wrapper">
-                    <a href="#" class="brand-logo center">EYO</a>
+                    <a href="#" id="logo" class="brand-logo center">
+                        
+                    </a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>                
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href="index.html">Home</a></li>
@@ -34,15 +36,16 @@
                     <li><a href="collapsible.html">Departments</a></li>
                     </ul>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li><a href="sass.html">Get Involved</a></li>
+                            <li><a href="getInvolved.html">Get Involved</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                     <ul class="side-nav" id="mobile-demo">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="badges.html">Departments</a></li>
-                        <li><a href="collapsible.html">Get Involved</a></li>
-                        <li><a href="mobile.html">Contact</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="getInvolved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 
@@ -112,35 +115,43 @@
                     </div>
                 </div>
             </div>
-
+            
         </div>
-
+        <hr style="width: 80%; margin-left: 10%; margin-top: 5%">
         <div class="row" id="homepage-section3">
             <h2>WHAT WE DO</h2>
             <div class="col s12 m7 l4 offset-l2">
                 <ul class="tabs">
-                    <li data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine" class="tab col s12"><a href="#test1">
+                    <li class="tab col s12"><a href="#test1">
                         <h6>ARTICLE 1</h6>
                         <p>This is an article</p>
                     </a></li>
-                    <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="300" data-aos-easing="ease-in-sine" class="tab col s12"><a class="active" href="#test2"><h6>ARTICLE 2</h6>
+                    <li  class="tab col s12"><a class="active" href="#test2"><h6>ARTICLE 2</h6>
                         <p>This is an article</p></a></li>
-                    <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="600" data-aos-easing="ease-in-sine" class="tab col s12"><a href="#test3"><h6>ARTICLE 3</h6>
+                    <li  class="tab col s12"><a href="#test3"><h6>ARTICLE 3</h6>
                         <p>This is an article</p></a></li>
-                    <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="900" data-aos-easing="ease-in-sine" class="tab col s12"><a href="#test4"><h6>ARTICLE 4</h6>
+                    <li  class="tab col s12"><a href="#test4"><h6>ARTICLE 4</h6>
                         <p>This is an article</p></a></li>
                 </ul>
             </div>
-            <div id="tab-content" class="col s12 m7 l4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000" data-aos-easing="ease-in-sine">
+            <div id="tab-content" class="col s12 m7 l4" >
                 <div id="test1" class="col s12">
-                   <p>Test 1</p> </div>
+                    <h6>EYO MUSIC (ENYOMM)</h6>
+                   <p>Excellent Youth Outreach Music literally called EnYOMM is a Dynamic music ministry
+                        aimed at spreading the gospel, presenting Christ to the world through music and to
+                        promote gospel albums composed by the group. EnYOMM ministers on various
+                        platforms such as: in churches, schools, hospitals, during weddings among others. Its
+                        mandate is to exalt Christ in worship wherever we go and by so doing draw men unto
+                        Christ Jesus (John 12:32).</p> 
+                    <!-- <button class="waves-effect waves-light btn">Read More</button> -->
+                </div>
                 <div id="test2" class="col s12">
                    <p>Test 2</p> </div>
                 <div id="test3" class="col s12"><p>Test 3</p></div>
                 <div id="test4" class="col s12"><p>Test 4</p></div>
             </div>
         </div>
-
+        <hr style="width: 80%; margin-left: 10%;">
         <div class="row" id="homepage-section4">
             <h2>OUR TEAM</h2>
             <div class="col s12 m7 l6 offset-l2">
@@ -159,10 +170,9 @@
                     
                 </div>
             </div>
-            
+            <!-- <div class="col s12 m7 l4"></div> -->
             
         </div>
-
         <div id="footer">
             <div id="social-media">
                 <img src="img/fb icon.png" alt="">
