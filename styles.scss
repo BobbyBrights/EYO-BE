@@ -14,30 +14,40 @@ $light-blue: #98C4D1;
    right: 0;
    width: 50px;
 }
+
 nav{
-    background: rgba($color: #000000, $alpha: 0.7);
+    background: rgba($color: #ffffff, $alpha: 0.7);
     box-shadow: 0 0 0 0;
     -webkit-box-shadow: 0 0 0 0;
-    background:rgba(0,0,0,0.5);
+    background:rgb(255, 255, 255);
     position: absolute;
     top: 0;
     right: 0;
     z-index: 40000;
     font-family: "GothamRoundedLight",sans-serif;
-    //border: 1px solid black;
+    color: black;
+    
+    ul{
+        li{
+            a{
+                color: black;
+                font-size: 1em;
+                list-style: none;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+   
 
     .left{
         margin-left: 24%;
-        //border: 1px solid black
     }
     .right{
         margin-right: 23%;
-    }
-
-    .nav-wrapper{
-        //background: black;
-        //background: rgba($color: #000000, $alpha: 0.7);
-        color: white;
     }
 }
 
@@ -49,7 +59,7 @@ nav{
         z-index: inherit;
         color: white;
         a{
-            color: white;
+            color: black;
         }
     }
 }
@@ -63,7 +73,7 @@ nav{
 body{
     height: 100%;
     background: $ice-blue;
-    
+    color: black;
 
     h2{
         font-family: "GothamBold",sans-serif;
@@ -72,6 +82,18 @@ body{
         font-weight: bold;
         margin-bottom: 5%;
         color: rgb(100, 100, 100);
+
+        hr{
+            width: 7%;
+            font-size: 10px;
+            margin-left: 35.5%;
+            margin-top: 1;
+            padding-top: 0;
+            height: 2px;
+            background: rgb(100, 100, 100);
+            border: 0px;
+            color: rgb(100, 100, 100);
+        }
     }
 }
 
@@ -100,6 +122,25 @@ body{
 #homepage-section2{
     padding: 5% 10%;
     font-family: "GothamRoundedLight",sans-serif;
+    position: relative;
+
+
+    h1,h3{
+        color: rgba(226, 216, 216,0.2);
+        position: absolute;
+        font-size: 200px;
+        bottom: 0;
+        right: 0;
+        //border: 1px solid black;
+        font-family: "GothamUltra",sans-serif;
+        font-weight: bold;
+        z-index: -1;
+    }
+
+    h3{
+        display: none;
+    }
+
     .l4{
         margin: 0;
         //padding: 0;
@@ -109,6 +150,13 @@ body{
    
     .card{
         transition: transform 0.5s ease-in;
+        //height: 600px;
+        .card-image{
+            height: 70%;
+            img{
+                height: 100%;
+            }
+        }
         &:hover{
             transform: scale(1.1);
             -webkit-transform: scale(1.1);
@@ -121,6 +169,26 @@ body{
 #homepage-section3{
     position: relative;
     margin-top: 5%;
+
+
+    h1{
+        color: rgba(226, 216, 216,0.3);
+        position: absolute;
+        font-size: 200px;
+        bottom: 0;
+        left: 0;
+        //border: 1px solid black;
+        font-family: "GothamUltra",sans-serif;
+        font-weight: bold;
+        z-index: -1;
+    }
+
+    h2{
+        hr{
+            margin-left: 38%;
+        }
+    }
+
     .col:last-child{
         height: 350px;
         padding: 0;
@@ -174,13 +242,10 @@ body{
             -webkit-background-size: cover;
             background-size: cover;
         }
-        //background: $teal;
-        //opacity: 0.4;
         margin-top: 10%;
         li{
             display: block;
-            //width: 100%;
-            height: 60px;
+            height: 70px;
             background: white;
             border-bottom: 1px solid;
             overflow: hidden !important;
@@ -188,6 +253,7 @@ body{
             color: black;
             color: white;
             z-index: 10;
+            padding-top: 2%;
 
             a{
                 font-size: 13px;
@@ -209,6 +275,7 @@ body{
                     margin: 0;
                     line-height: 12px;
                     height: 12px;
+                    width: 70%;
                 }
             }
         }
@@ -230,6 +297,19 @@ body{
         align-content: center;
         align-items: center;
         //background-image: url("img/pex5.jpeg");
+
+        h4{
+            color: white;
+            font-size: 16px;
+            font-family: "GothamMedium",sans-serif;
+            font-weight: bold;
+            position: absolute;
+            right: -5%;
+            top: 10%;
+            transform: rotateZ(90deg);
+            //border: 1px solid black;
+            z-index: 200;
+        }
 
         
         // filter:blur(1px);
@@ -269,6 +349,9 @@ body{
             width: 50%;
             height: 60%;
             padding: 2%;
+            margin-top: 5%;
+            padding-left: 0;
+            margin-left: 40%;
             //background: rgba(18,96,151,0.6);
             // position: absolute;
             // left: 60%;
@@ -383,7 +466,8 @@ body{
 #footer{
     margin-top: 0;
     height: 300px;
-    background: #3B362F;
+    background: $teal;
+    //background: rgba(255,255,255,0.7);
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -416,7 +500,7 @@ body{
     }
 
     #copyright{
-        color: #bfbfbf;
+        color: white;
         font-family: "GothamBook",sans-serif;
         font-size: 16px;
         margin-top: 0%;
@@ -435,38 +519,44 @@ body{
     }
 }
 
-//--------------------------------------TEST----------------------------------------
-#home-sec1{
-    background: $ice-blue;
-    
+//------------------------------------------------------ABOUT-------------------------
+#about-wrapper{
+    .profile_head{
+        margin-bottom: 0%;
+        padding-bottom: 0;
+        h1{
+            font-family: "GothamBold",sans-serif;
+            font-size: 40px;
+            text-align: center;
+            //font-weight: bold;
+            //margin-bottom: 5%;
+            color: rgb(100, 100, 100);
 
-    div:first-child{
-        height: 90%;
-        background-image: url('img/eyo-cross.png');
-        background-repeat: no-repeat;
-        background-size: contain;
+            hr{
+                width: 7%;
+                font-size: 10px;
+                margin-left: 40%;
+                margin-top: 1%;
+                padding-top: 0;
+                height: 2px;
+                background: rgb(100, 100, 100);
+                border: 0px;
+                color: rgb(100, 100, 100);
+            }
+        }
         
     }
+    p{
+        font-family: "GothamRoundedLight",sans-serif !important;
+        // display: inline-block;
+        // width: 50%;
+        
+    }
+    #about-section2{
 
-    div:last-child{
-        font-family: "GothamRoundedMedium",sans-serif;
-        color: rgb(126, 119, 119);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        // align-content: center;
-        // align-items: center;
-        height: 90%;
-        h6{
-            font-size: 24px;
-
-        }
     }
 }
 
-#home-sec2{
-
-}
 
 // ---------------------------FONT FACES--------------------------------------------
 @font-face {

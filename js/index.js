@@ -5,6 +5,7 @@ $( document ).ready(function(){
     console.log(height);
     $("#get-form").css("width",width);
     $("#get-form").css("height",height);
+    $("#homepage-section2").css("height",height);
     $("#homepage-section3").css("height",height);
     $("#homepage-section1 img").css("height",height);
     $(".button-collapse").sideNav();
