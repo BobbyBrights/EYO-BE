@@ -20,7 +20,7 @@
         <script src="js/index.js"></script>
         
    </head>
-   <body>
+   <body style="overflow-x:hidden !important">
 
         
         <div id=homepage-section1 class="carousel carousel-slider" data-indicators="true">
@@ -29,7 +29,7 @@
                     <a href="#" id="logo" class="brand-logo center">
                         
                     </a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>                
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i style="color:black" class="material-icons">menu</i></a>                
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -51,11 +51,18 @@
                 
                 </div>
             </nav>
+
             <a class="carousel-item" href="#one!"><img src="img/pex6.jpeg"></a>
             <a class="carousel-item" href="#two!"><img src="img/pex1.jpg"></a>
             <a class="carousel-item" href="#three!"><img src="img/pex7.jpeg"></a>
             <a class="carousel-item" href="#four!"><img src="img/pex8.jpeg"></a>
-            <button class="waves-effect waves-light btn pink">DONATE</button>
+
+            <div id="text">
+                <h6 data-aos-duration="1000" data-aos="fade-up" data-aos-easing="ease-in-sine">EXCELLENT <br> YOUTH OUTREACH</h6>
+                <hr data-aos="fade-right" data-aos-delay="1100" data-aos-easing="ease-in-sine">
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-sine">Investing in young adults <br> to make a purposeful global impact.</p>
+            </div>
+            <button class="waves-effect waves-light btn pink"><a style="color:white" href="https://www.expresspaygh.com/eyo">DONATE</a></button>
         </div>
 
 
@@ -67,7 +74,7 @@
             <h1>01</h1>
             <h3>WHO ARE WE?</h3>
             <h2>WHO WE ARE <hr data-aos="fade-right"></h2>
-            <div class="col s12 m7 l4">
+            <div class="col s12 m6 l4">
                 <div class="card medium" data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-in-sine">
                     <div class="card-image">
                         <img src="img/pex4.jpeg">
@@ -85,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m7 l4">
+            <div class="col s12 m6 l4">
                 <div class="card medium" data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-in-sine">
                 <div class="card-image">
                     <img src="img/pex5.jpeg">
@@ -103,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m7 l4">
+            <div class="col s12 m6 l4">
                 <div class="card medium" data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-in-sine">
                 <div class="card-image">
                     <img src="img/bible1.jpg">
@@ -121,29 +128,52 @@
             </div>
             
         </div>
-        <hr style="width: 80%; margin-left: 10%; margin-top: 5%">
+        <!-- <hr style="width: 80%; margin-left: 10%; margin-top: 5%"> -->
+
+        <div class="row" id="quote" >
+            <div id="round" class="col s12 m12 l12 center-align">
+                <div data-aos="fade-down" data-aos-duration="500"></div>
+            </div>
+            <div class="col s12 m10 l10 offset-l1 center-align">
+                <p>&quot;We are not put on this earth for ourselves, but are placed here for each other. If you are there always for others, then in time of need, someone will be there for you&quot;</p> 
+                <h6 data-aos="fade-left">-Jeff Warner</h6>
+            </div>
+            <div id="round" class="col s12 m12 l12 center-align">
+                <div data-aos="fade-up" data-aos-duration="500"></div>
+            </div>
+        </div>
+
+        <!-- <div id="mid-carousel">
+            <div class="carousel" >
+                <a class="carousel-item" href="#one!"><img src="img/pex6.jpeg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/pex1.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/pex8.jpeg"></a>
+                <a class="carousel-item" href="#four!"><img src="img/pex1.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="img/pex8.jpeg"></a>
+            </div>
+        </div> -->
 
         <div class="row" id="homepage-section3">
             <h1>02</h1>
             <h2>WHAT WE DO<hr data-aos="fade-right"></h2>
-            <div class="col s12 m7 l4 offset-l2">
+            <div class="col s12 m12 l4 offset-l2">
                 <ul class="tabs">
-                    <li data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine" class="tab col s12"><a class="active" href="#test1">
+                    <li data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine" class="tab"><a class="active" href="#test1">
                         <h6>EYO MUSIC</h6>
                         <p>Learn about our music outreach</p>
                     </a></li>
-                    <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="300" data-aos-easing="ease-in-sine"  class="tab col s12"><a href="#test2"><h6>Missions</h6>
+                    <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="300" data-aos-easing="ease-in-sine"  class="tab"><a href="#test2"><h6>Missions</h6>
                         <p>International and local missions</p></a></li>
-                    <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="600" data-aos-easing="ease-in-sine"  class="tab col s12"><a href="#test3">
+                    <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="600" data-aos-easing="ease-in-sine"  class="tab"><a href="#test3">
                         <h6>CAMPS</h6>
                         <p>The department organizes two major camps every year</p></a></li>
-                    <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="900" data-aos-easing="ease-in-sine"  class="tab col s12"><a href="#test4"><h6>YOUTH RESOURCE CENTRE</h6>
+                    <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="900" data-aos-easing="ease-in-sine"  class="tab"><a href="#test4"><h6>YOUTH RESOURCE CENTRE</h6>
                         <p>This department oversees the smooth administration of the EY resource Centre</p></a></li>
-                    <li style="display: none"  class="tab col s12"><a href="#test4"><h6>YOUTH RESOURCE CENTRE</h6>
-                        <p>This department oversees the smooth administration of the EY resource Centre</p></a></li>
+                    <!-- <li style="display: none"  class="tab col s12"><a href="#test4"><h6>YOUTH RESOURCE CENTRE</h6>
+                        <p>This department oversees the smooth administration of the EY resource Centre</p></a></li> -->
                 </ul>
             </div>
-            <div data-aos="zoom-in" id="tab-content" class="col s12 m7 l4" >
+            <div data-aos="zoom-in" id="tab-content" class="col s12 m12 l4" >
                 <h4>WHAT WE DO</h4>
                 <div id="test1" class="col s12">
                     <h6>EYO MUSIC (ENYOMM)</h6>
@@ -164,6 +194,22 @@
                 <div id="test4" class="col s12">
                     <h6>YOUTH RESOURCE CENTRE</h6>
                     <p>This department oversees the smooth administration of the Excellent Youth resource Centre. The coordinator ensures good and tidy environment, identifying the needs and making provision for it. He also ensures that the facilities at the resource Centre are functioning effectively through regular inspection and maintenance culture. This department also embarks on outreaches to Junior and High schools. Moreover, it engages believers in discipleship as it is very necessary in the great commission Jesus Christ commanded us to embark on.</p></div>
+            </div>
+        </div>
+        
+        <div class="row" id="homepage-section5">
+            <div data-aos="zoom-out-right" data-aos-duration="1000" id="image" class="col s12 m6 l5"></div>
+            <div data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="500" id="image-text" class="col s12 m6 l7">
+                <h2>JOIN <em> OUR EVENTS </em>& <br> HELP US BY DONATION</h2>
+                <h6>You can help us by registering for our camps</h6>
+                <hr>
+                <p>By giving a one-time gift or becoming a monthly partner you are contributing to <br>
+                        championing the missionary works both local and international and into life development <br>
+                        programs of the youth.</p>
+                <div>
+                    <a id="join" class="waves-effect waves-light btn" href="getInvolved.html"> JOIN NOW</a>
+                    <a id="donate" class="waves-effect waves-light btn" href="https://www.expresspaygh.com/eyo">DONATE</a>
+                </div>
             </div>
         </div>
         <!-- <hr style="width: 80%; margin-left: 10%;">
@@ -194,9 +240,9 @@
                 <img src="img/twitter icon.png" alt="">
                 <img src="img/insta icon.png" alt="">
             </div>
-            <h3 id="copyright">Copyright 2017, Excellent Youth Outreach. All Rights Reserved</h3>
-            <h3>P.O. Box CT 11298 - Accra-Ghana</h3>
-            <h3>Osu Crescent - Nyaniba Estates, Osu</h3>
+            <h3 id="copyright">Excellent Youth Outreach Secretariat</h3>
+            <h3>NO. 16 Nii Kodua Road,</h3>
+            <h3>West Adenta, Accra</h3>
         </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
