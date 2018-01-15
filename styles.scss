@@ -8,11 +8,11 @@ $light-blue: #98C4D1;
    background-image: url('img/EYO LOGO.jpg');
    background-repeat: no-repeat;
    background-size: contain;
-   height: 50px;
+   height: 70px;
    position: absolute;
    top: 8px;
    right: 0;
-   width: 50px;
+   width: 70px;
 
    @media screen and (max-width: 480px){
         width: 40px;
@@ -32,10 +32,15 @@ nav{
     z-index: 40000;
     font-family: "GothamRoundedLight",sans-serif;
     color: black;
+    height: 80px;
     
     ul{
+        height: inherit;
         li{
+            height: inherit;
             a{
+                height: inherit;
+                line-height: 80px;
                 color: black;
                 font-size: 1em;
                 list-style: none;
@@ -80,6 +85,7 @@ body{
     height: 100%;
     background: $ice-blue;
     color: black;
+    overflow-x: hidden !important;
 
     h2{
         font-family: "GothamBold",sans-serif;
@@ -88,6 +94,7 @@ body{
         font-weight: bold;
         margin-bottom: 5%;
         color: rgb(100, 100, 100);
+        margin-top: 5%;
 
         hr{
             width: 7%;
@@ -100,25 +107,82 @@ body{
             border: 0px;
             color: rgb(100, 100, 100);
         }
+
+        @media screen and (max-width: 480px){
+            font-size: 30px;
+        }
+    
     }
+}
+
+#homepage-section{
+    position: relative;
+    img{
+        height: 100%;
+    }
+    button{
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        // 
+       
+    }
+
+    #text{
+        position: absolute;
+        bottom: 35%;
+        left: 10%;
+        z-index: 20;
+        color: white;
+        font-family: "GothamUltra",sans-serif;
+
+        @media screen and (max-width: 938px){
+            bottom: 20%;
+        }
+
+        
+
+        hr{
+            width: 50%;
+            margin: 1%;
+            margin-left: 0;
+            border-style: solid;
+        }
+
+        h6{
+            font-size: 50px;
+            margin: 0;
+            padding: 0;
+            line-height: 45px;
+        }
+        p{
+            font-family: "GothamLight",sans-serif;
+            font-size: 18px;
+            padding: 0;
+            //margin: 0;
+        }
+
+        @media screen and (max-width: 480px){
+            h6{
+                font-size: 30px;
+                line-height: 28px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    } 
 }
 
 #homepage-section1{
     position: relative;
     height: 100%;
     font-family: "GothamRoundedLight",sans-serif;
-    .carousel-item{
-        width: 100%;
-        height: 100%;
-    }
     img{
         width: 100%;
        // height: 600px;
     }
 
-    @media screen and (max-width: 480px){
-        height: 50%;
-    }
 
     button{
         position: absolute;
@@ -174,19 +238,7 @@ body{
     }
 }
 
-// #mid-carousel{
-//     width: 100%;
-//     height: auto;
 
-//     div{
-//         a{
-//             img{
-//                 height: 400px;
-//                 width: 300px;
-//             }
-//         }
-//     }
-// }
 
 #homepage-section2{
     padding: 5% 10%;
@@ -242,6 +294,7 @@ body{
     margin-top: 5%;
     margin-bottom: 5%;
     background: $light-blue;
+    overflow-x: hidden;
     //height: 100%;
 
     h6{
@@ -269,6 +322,7 @@ body{
     position: relative;
     margin-top: 5%;
     height: auto;
+    padding-right: 5px;
     
     h1{
         color: rgba(226, 216, 216,0.3);
@@ -403,7 +457,7 @@ body{
                 height: auto;
             }
             li{
-                width: 100%;
+                //width: 100%;
                 //width: 400px;
                 display: block;
                 height: auto;
@@ -413,8 +467,11 @@ body{
                 a{
                     width: 100%;
                     display: block;
+                    font-size: 8px;
+                    padding: auto 5px;
+                    
                    h6{
-                       font-size: 10px;
+                       font-size: 8px;
                        
                    }
                    p{
@@ -432,7 +489,6 @@ body{
                 border-right: 0px;
             }
         }
-
        
     }
 
@@ -520,6 +576,8 @@ body{
         }
         
     }
+
+    
 }
 
 #homepage-section4{
@@ -744,6 +802,10 @@ body{
             //margin-bottom: 5%;
             color: rgb(100, 100, 100);
 
+            @media screen and (max-width: 480px){
+                font-size: 30px;
+            }
+
             hr{
                 width: 7%;
                 font-size: 10px;
@@ -768,7 +830,7 @@ body{
         margin-top: 5%;
         margin-bottom: 0%;
 
-        div:first-child{
+        #about2-text{
             background: beige;
             text-align: left;
             padding-left: 15px;
@@ -787,11 +849,24 @@ body{
         }
 
         #about-image1{
-            background-image: url('img/bible1.jpg');
+            background-image: url('img/IMG_9416.jpg');
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
             height: 400px;
+        }
+
+        @media screen and (max-width: 480px){
+            #about2-text{
+                p{
+                    font-size: 11px;
+                    width: 90%
+                }
+            }
+            #about-image1{
+                height: 200px;
+            }
+            
         }
     }
 
@@ -819,12 +894,26 @@ body{
         }
 
         #about-image2{
-            background-image: url('img/bible1.jpg');
+            background-image: url('img/IMG_9382.jpg');
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
             height: 400px;
         } 
+
+        @media screen and (max-width: 480px){
+            #about3-text{
+                height: auto;
+                p{
+                    font-size: 11px;
+                    width: 90%
+                }
+            }
+            #about-image2{
+                height: 200px;
+            }
+            
+        }
     }
 }
 
@@ -937,6 +1026,240 @@ body{
        height: 50%;
     }
 }
+
+//--------------------------------------------------DEPARTMENT--------------------------
+#department-head{
+    margin-top: 3%;
+    h2{
+        font-family: "GothamBold",sans-serif;
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 0%;
+        color: rgb(100, 100, 100);
+        letter-spacing: 0px;
+        text-transform: uppercase;
+
+        hr{
+            width: 7%;
+            font-size: 10px;
+            margin-left: 39%;
+            margin-top: 5px;
+            padding-top: 0;
+            height: 2px;
+            background: rgb(100, 100, 100);
+            border: 0px;
+            color: rgb(100, 100, 100);
+        }
+
+        @media screen and (max-width: 480px){
+            font-size: 30px;
+        }
+    
+    }
+}
+#department-wrapper{
+    padding:  10px 30px;
+    font-family: "GothamRoundedLight",sans-serif;
+    letter-spacing: 0px;
+
+    .nav-tabs{
+        li{
+            a{
+                color: $teal;
+            }
+        }
+    }
+
+    #missions,#branch{
+        padding-left: 20px;
+        #missions-text{
+            h1{
+                margin-top: 5%;
+                font-family: "GothamMedium",sans-serif;
+                font-size: 24px;
+                text-align: left;
+                text-decoration: 1px dashed salmon;
+            }
+
+            ul{
+                margin-top: 2px;
+                li{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: stretch;
+                    padding-top: 20px;
+                    //width: 45%;
+
+                    div:first-child{
+                        // display: flex;
+                        // justify-content: center;
+                        // align-content: center;
+                        // align-items: center;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        i{
+                            padding: 15px;
+                            background: $light-blue;
+                            border-radius: 50%;
+                            color: white;
+                            font-size: 18px;
+                        }
+                    }
+
+                    div:last-child{
+                        h6{
+                            margin: 0;
+                            padding: 0;
+                            font-size: 14px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #missions-image{
+            padding-top: 40px;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: center;
+            // align-content: center;
+            // align-items: center;
+            // height: 1000px;
+        }
+    }
+    #branch{
+        #missions-text{
+            ul{
+                li{
+                    height: 120px;
+                    div:first-child{
+                        padding-top: 0px;
+                    }
+                }
+            }
+        }
+        
+    }
+    #outreach,#branch,#prayer,#youth,#programs,#music,#partners{
+        padding-top: 2%;
+        h1{
+            font-family: "GothamMedium",sans-serif;
+            font-size: 24px;
+            text-align: left;
+        }
+        p{
+            width: 80%;
+        }
+    }
+
+    // h1{
+    //     font-family: "GothamBold",sans-serif;
+    //     font-size: 40px;
+    //     text-align: center;
+    //     font-weight: bold;
+    //     //margin-bottom: 5%;
+    //     color: rgb(100, 100, 100);
+
+    //     @media screen and (max-width: 480px){
+    //         font-size: 30px;
+    //     }
+    
+    // }
+
+
+}
+// #department-wrapper{
+//     margin-top: 80px;
+//     height: 400px;
+
+//     // #scroll-menu{
+//     //     position: fixed;
+//     //     right: 0;
+//     // }
+
+//     #missions,#outreach{
+//         padding: 20px;
+//         font-family: "GothamRoundedLight",sans-serif; 
+
+
+//         h1{
+//             font-size: 24px;
+//             font-family: "GothamMedium",sans-serif;
+//             letter-spacing: -1px;
+//             text-align: left;
+//         }
+//         h3{
+//             font-size: 18px;
+//             text-align: center;
+//             font-weight: bold;
+//             margin-top: 5%;
+//         }
+//         // p{
+//         //     font-family: "GothamRoundedLight",sans-serif; 
+//         // }
+
+//         .tabs{
+//             margin-top: 3%;
+//             font-family: "GothamRoundedLight",sans-serif;
+//             .indicator{
+//                 background: $teal;
+//             }
+//             li{
+//                 width: auto;
+                
+//                 a{
+//                     color: $teal;
+//                     &:hover{
+//                         text-decoration: none;
+//                         color: $teal;
+//                     }
+//                     &:active,&:focus{
+//                         text-decoration: none;
+//                         color: $teal;
+//                         border-color: $teal 
+//                     }
+
+                    
+//                 }
+//             }
+//         }
+
+//         #test-swipe-1,#test-swipe-2,#test-swipe-3,#test-swipe-4{
+//             //border: 1px solid $light-blue;
+//             padding: 20px;
+//             height: 150px;
+//             background: $light-blue;
+//             //opacity: 0.3;
+//             color: white;
+//             margin-bottom: 20px;
+//         }
+//     }
+
+//     #outreach{
+//         // display: flex;
+//         // flex-direction: row;
+//         height: 500px;
+//         div{
+//             div:last-child{
+//                 height: 500px;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-content: center;
+//                 justify-content: center;
+//                 //border: 1px solid
+//                 //align-items: center;
+//             }
+//         }
+        
+//     }
+// }
 
 //---------------------------   keyframes ----------------------
 @keyframes fadeIn{

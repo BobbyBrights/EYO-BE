@@ -9,14 +9,14 @@ $( document ).ready(function(){
         $("#homepage-section3").css("height",height); 
         $("#homepage-section2").css("height",height);
         $("#homepage-section1").css("height",height);
-        $("#homepage-section1 img").css("height",height);
-    }
-    if(width < 500){
-        $("#homepage-section1").css("height",height/2); 
     }
 
-    console.log(height);
-    $("body").css("width",width)
+    $("#homepage-section").css("height",height);
+    $("#homepage-section img").css("height",height);
+    $("#homepage-section.carousel.carousel-slider.initialized").css("height",height);
+    console.log("WIDTH: " +width);
+    console.log("HEIGHT: " +height);
+    //$("body").css("width",width)
     $("#get-form").css("width",width);
     $("#get-form").css("height",height);
     

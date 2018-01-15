@@ -2,11 +2,11 @@
   background-image: url("img/EYO LOGO.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 50px;
+  height: 70px;
   position: absolute;
   top: 8px;
   right: 0;
-  width: 50px; }
+  width: 70px; }
   @media screen and (max-width: 480px) {
     #logo {
       width: 40px;
@@ -22,14 +22,21 @@ nav {
   right: 0;
   z-index: 40000;
   font-family: "GothamRoundedLight",sans-serif;
-  color: black; }
-  nav ul li a {
-    color: black;
-    font-size: 1em;
-    list-style: none;
-    text-decoration: none; }
-    nav ul li a:hover {
-      text-decoration: none; }
+  color: black;
+  height: 80px; }
+  nav ul {
+    height: inherit; }
+    nav ul li {
+      height: inherit; }
+      nav ul li a {
+        height: inherit;
+        line-height: 80px;
+        color: black;
+        font-size: 1em;
+        list-style: none;
+        text-decoration: none; }
+        nav ul li a:hover {
+          text-decoration: none; }
   nav .left {
     margin-left: 24%; }
   nav .right {
@@ -50,14 +57,16 @@ nav {
 body {
   height: 100%;
   background: #FAFBFB;
-  color: black; }
+  color: black;
+  overflow-x: hidden !important; }
   body h2 {
     font-family: "GothamBold",sans-serif;
     font-size: 40px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 5%;
-    color: #646464; }
+    color: #646464;
+    margin-top: 5%; }
     body h2 hr {
       width: 7%;
       font-size: 10px;
@@ -68,19 +77,55 @@ body {
       background: #646464;
       border: 0px;
       color: #646464; }
+    @media screen and (max-width: 480px) {
+      body h2 {
+        font-size: 30px; } }
+
+#homepage-section {
+  position: relative; }
+  #homepage-section img {
+    height: 100%; }
+  #homepage-section button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%; }
+  #homepage-section #text {
+    position: absolute;
+    bottom: 35%;
+    left: 10%;
+    z-index: 20;
+    color: white;
+    font-family: "GothamUltra",sans-serif; }
+    @media screen and (max-width: 938px) {
+      #homepage-section #text {
+        bottom: 20%; } }
+    #homepage-section #text hr {
+      width: 50%;
+      margin: 1%;
+      margin-left: 0;
+      border-style: solid; }
+    #homepage-section #text h6 {
+      font-size: 50px;
+      margin: 0;
+      padding: 0;
+      line-height: 45px; }
+    #homepage-section #text p {
+      font-family: "GothamLight",sans-serif;
+      font-size: 18px;
+      padding: 0; }
+    @media screen and (max-width: 480px) {
+      #homepage-section #text h6 {
+        font-size: 30px;
+        line-height: 28px; }
+      #homepage-section #text p {
+        font-size: 12px; } }
 
 #homepage-section1 {
   position: relative;
   height: 100%;
   font-family: "GothamRoundedLight",sans-serif; }
-  #homepage-section1 .carousel-item {
-    width: 100%;
-    height: 100%; }
   #homepage-section1 img {
     width: 100%; }
-  @media screen and (max-width: 480px) {
-    #homepage-section1 {
-      height: 50%; } }
   #homepage-section1 button {
     position: absolute;
     bottom: 5%;
@@ -152,7 +197,8 @@ body {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 5%;
-  background: #98C4D1; }
+  background: #98C4D1;
+  overflow-x: hidden; }
   #quote h6 {
     font-style: italic;
     text-transform: uppercase; }
@@ -171,7 +217,8 @@ body {
 #homepage-section3 {
   position: relative;
   margin-top: 5%;
-  height: auto; }
+  height: auto;
+  padding-right: 5px; }
   #homepage-section3 h1 {
     color: rgba(226, 216, 216, 0.3);
     position: absolute;
@@ -262,16 +309,17 @@ body {
           flex-direction: column;
           height: auto; }
         #homepage-section3 .tabs li {
-          width: 100%;
           display: block;
           height: auto;
           border-bottom: 0;
           border-right: 1px solid white; }
           #homepage-section3 .tabs li a {
             width: 100%;
-            display: block; }
+            display: block;
+            font-size: 8px;
+            padding: auto 5px; }
             #homepage-section3 .tabs li a h6 {
-              font-size: 10px; }
+              font-size: 8px; }
             #homepage-section3 .tabs li a p {
               font-size: 8px;
               word-wrap: break-word;
@@ -482,6 +530,9 @@ body {
     font-size: 40px;
     text-align: center;
     color: #646464; }
+    @media screen and (max-width: 480px) {
+      #about-wrapper .profile_head h1, #about-wrapper #about2 h1, #about-wrapper #about3 h1 {
+        font-size: 30px; } }
     #about-wrapper .profile_head h1 hr, #about-wrapper #about2 h1 hr, #about-wrapper #about3 h1 hr {
       width: 7%;
       font-size: 10px;
@@ -497,23 +548,29 @@ body {
 #about-wrapper #about2 {
   margin-top: 5%;
   margin-bottom: 0%; }
-  #about-wrapper #about2 div:first-child {
+  #about-wrapper #about2 #about2-text {
     background: beige;
     text-align: left;
     padding-left: 15px; }
-    #about-wrapper #about2 div:first-child h1 {
+    #about-wrapper #about2 #about2-text h1 {
       text-align: left; }
-      #about-wrapper #about2 div:first-child h1 hr {
+      #about-wrapper #about2 #about2-text h1 hr {
         margin-left: 0; }
-    #about-wrapper #about2 div:first-child p {
+    #about-wrapper #about2 #about2-text p {
       font-size: 14px;
       width: 80%; }
   #about-wrapper #about2 #about-image1 {
-    background-image: url("img/bible1.jpg");
+    background-image: url("img/IMG_9416.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px; }
+  @media screen and (max-width: 480px) {
+    #about-wrapper #about2 #about2-text p {
+      font-size: 11px;
+      width: 90%; }
+    #about-wrapper #about2 #about-image1 {
+      height: 200px; } }
 #about-wrapper #about3 {
   margin-top: -2%; }
   #about-wrapper #about3 #about3-text {
@@ -529,11 +586,19 @@ body {
       #about-wrapper #about3 #about3-text h1 hr {
         margin-left: 0; }
   #about-wrapper #about3 #about-image2 {
-    background-image: url("img/bible1.jpg");
+    background-image: url("img/IMG_9382.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px; }
+  @media screen and (max-width: 480px) {
+    #about-wrapper #about3 #about3-text {
+      height: auto; }
+      #about-wrapper #about3 #about3-text p {
+        font-size: 11px;
+        width: 90%; }
+    #about-wrapper #about3 #about-image2 {
+      height: 200px; } }
 
 #map {
   height: 100%;
@@ -609,6 +674,85 @@ body {
       bottom: 5%;
       width: 80%;
       height: 50%; } }
+
+#department-head {
+  margin-top: 3%; }
+  #department-head h2 {
+    font-family: "GothamBold",sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0%;
+    color: #646464;
+    letter-spacing: 0px;
+    text-transform: uppercase; }
+    #department-head h2 hr {
+      width: 7%;
+      font-size: 10px;
+      margin-left: 39%;
+      margin-top: 5px;
+      padding-top: 0;
+      height: 2px;
+      background: #646464;
+      border: 0px;
+      color: #646464; }
+    @media screen and (max-width: 480px) {
+      #department-head h2 {
+        font-size: 30px; } }
+
+#department-wrapper {
+  padding: 10px 30px;
+  font-family: "GothamRoundedLight",sans-serif;
+  letter-spacing: 0px; }
+  #department-wrapper .nav-tabs li a {
+    color: #126097; }
+  #department-wrapper #missions, #department-wrapper #branch {
+    padding-left: 20px; }
+    #department-wrapper #missions #missions-text h1, #department-wrapper #branch #missions-text h1 {
+      margin-top: 5%;
+      font-family: "GothamMedium",sans-serif;
+      font-size: 24px;
+      text-align: left;
+      text-decoration: 1px dashed salmon; }
+    #department-wrapper #missions #missions-text ul, #department-wrapper #branch #missions-text ul {
+      margin-top: 2px; }
+      #department-wrapper #missions #missions-text ul li, #department-wrapper #branch #missions-text ul li {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        padding-top: 20px; }
+        #department-wrapper #missions #missions-text ul li div:first-child, #department-wrapper #branch #missions-text ul li div:first-child {
+          padding-top: 10px;
+          padding-left: 10px;
+          padding-right: 10px; }
+          #department-wrapper #missions #missions-text ul li div:first-child i, #department-wrapper #branch #missions-text ul li div:first-child i {
+            padding: 15px;
+            background: #98C4D1;
+            border-radius: 50%;
+            color: white;
+            font-size: 18px; }
+        #department-wrapper #missions #missions-text ul li div:last-child h6, #department-wrapper #branch #missions-text ul li div:last-child h6 {
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase; }
+        #department-wrapper #missions #missions-text ul li div:last-child p, #department-wrapper #branch #missions-text ul li div:last-child p {
+          font-size: 12px; }
+    #department-wrapper #missions #missions-image, #department-wrapper #branch #missions-image {
+      padding-top: 40px; }
+  #department-wrapper #branch #missions-text ul li {
+    height: 120px; }
+    #department-wrapper #branch #missions-text ul li div:first-child {
+      padding-top: 0px; }
+  #department-wrapper #outreach, #department-wrapper #branch, #department-wrapper #prayer, #department-wrapper #youth, #department-wrapper #programs, #department-wrapper #music, #department-wrapper #partners {
+    padding-top: 2%; }
+    #department-wrapper #outreach h1, #department-wrapper #branch h1, #department-wrapper #prayer h1, #department-wrapper #youth h1, #department-wrapper #programs h1, #department-wrapper #music h1, #department-wrapper #partners h1 {
+      font-family: "GothamMedium",sans-serif;
+      font-size: 24px;
+      text-align: left; }
+    #department-wrapper #outreach p, #department-wrapper #branch p, #department-wrapper #prayer p, #department-wrapper #youth p, #department-wrapper #programs p, #department-wrapper #music p, #department-wrapper #partners p {
+      width: 80%; }
 
 @keyframes fadeIn {
   from {
