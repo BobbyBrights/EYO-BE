@@ -41,6 +41,9 @@ nav {
     margin-left: 24%; }
   nav .right {
     margin-right: 23%; }
+  @media screen and (max-width: 480px) {
+    nav {
+      height: 50px; } }
 
 .side-nav {
   z-index: 2000;

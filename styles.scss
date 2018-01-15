@@ -60,6 +60,10 @@ nav{
     .right{
         margin-right: 23%;
     }
+
+    @media screen and (max-width: 480px){
+        height: 50px;
+    }
 }
 
 .side-nav{
