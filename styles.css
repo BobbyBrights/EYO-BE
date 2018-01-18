@@ -37,6 +37,14 @@ nav {
         text-decoration: none; }
         nav ul li a:hover {
           text-decoration: none; }
+  nav .dropdown-menu {
+    overflow: hidden;
+    height: auto; }
+    nav .dropdown-menu li {
+      height: 30px;
+      width: 100%; }
+      nav .dropdown-menu li a {
+        line-height: 30px; }
   nav .left {
     margin-left: 24%; }
   nav .right {
@@ -554,14 +562,16 @@ body {
   #about-wrapper #about2 #about2-text {
     background: beige;
     text-align: left;
-    padding-left: 15px; }
+    padding-left: 15px;
+    height: 399px; }
     #about-wrapper #about2 #about2-text h1 {
       text-align: left; }
       #about-wrapper #about2 #about2-text h1 hr {
         margin-left: 0; }
     #about-wrapper #about2 #about2-text p {
       font-size: 14px;
-      width: 80%; }
+      width: 80%;
+      height: 100%; }
   #about-wrapper #about2 #about-image1 {
     background-image: url("img/IMG_9416.jpg");
     background-position: center center;

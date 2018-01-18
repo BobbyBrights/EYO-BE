@@ -52,6 +52,18 @@ nav{
             }
         }
     }
+
+    .dropdown-menu{
+       overflow: hidden;
+       height: auto;
+        li{
+            height: 30px;
+            width: 100%;
+            a{
+                line-height: 30px;
+            }
+        }
+    }
    
 
     .left{
@@ -838,6 +850,7 @@ body{
             background: beige;
             text-align: left;
             padding-left: 15px;
+            height: 399px;
 
             h1{
                 text-align: left;
@@ -849,6 +862,7 @@ body{
             p{
                 font-size: 14px;
                 width: 80%;
+                height: 100%;;
             }
         }
 
