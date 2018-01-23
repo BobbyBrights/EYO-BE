@@ -21,6 +21,8 @@ $light-blue: #98C4D1;
 
 }
 
+
+
 nav{
     background: rgba($color: #ffffff, $alpha: 0.7);
     box-shadow: 0 0 0 0;
@@ -1446,4 +1448,250 @@ body{
     text-rendering: optimizeLegibility; 
 }
 
+
+
+
+.slider-item{
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    padding-left: 50px;
+    background-color: $teal;
+    
+    
+
+    hr{
+        width: 20%;
+        color: white;  
+    }
+
+    p{
+        margin-top: 40px;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase;
+    }
+}
+.carousel.carousel-slider{
+    top: 60px;
+}
+
+#image-one{
+    background-image: url('img/RevJohn_CroffetDirector.jpg');
+
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase;
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#image-two{
+    background-image: url('img/Kwesi_DepuDirector.jpg');
+    
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase;
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#image-three{
+    background-image: url('img/Kate_MissionsCoord.jpg');
+
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase; 
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#image-four{
+    background-image: url('img/Melvin_Finance.jpg');
+    
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase; 
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#image-five{
+    background-image: url('img/ErnestAwutey.JPG');
+    
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase; 
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#image-six{
+    background-image: url('img/MrsGeorgina.jpg');
+    
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase; 
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#image-seven{
+    background-image: url('img/AkuaAmankwah.jpg');
+    
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase; 
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#image-eight{
+    background-image: url('img/MartinAdofo.jpg');
+    
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase; 
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+
+#image-nine{
+    background-image: url('img/VeronicaArkoh.jpg');
+    
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase; 
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#image-ten{
+    background-image: url('img/SolomonOwusu.jpg');
+    
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase; 
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#image-eleven{
+    background-image: url('img/AtoAcquah.jpg');
+    
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase; 
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#image-twelve{
+    background-image: url('img/CynthiaBaaba.jpg');
+    
+    p{
+        margin-top: 30%;
+        font-size: 50px;
+        font-family: "GothamUltra",sans-serif;
+        color: black;
+        text-transform: uppercase; 
+
+        line-height: 50px;
+        strong{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
 
