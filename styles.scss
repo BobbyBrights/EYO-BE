@@ -777,13 +777,13 @@ body{
         font-family: "GothamLight",sans-serif;
         margin-top: 0%;
         margin-bottom: 2%; 
-        font-size: 16px;
+        font-size: 12px;
     }
 
     #copyright{
         color: white;
         font-family: "GothamBook",sans-serif;
-        font-size: 16px;
+        //font-size: 16px;
         margin-top: 0%;
         margin-bottom: 2%; 
     }
@@ -1110,13 +1110,8 @@ body{
                     flex-direction: row;
                     align-items: stretch;
                     padding-top: 20px;
-                    //width: 45%;
 
                     div:first-child{
-                        // display: flex;
-                        // justify-content: center;
-                        // align-content: center;
-                        // align-items: center;
                         padding-top: 10px;
                         padding-left: 10px;
                         padding-right: 10px;
@@ -1147,12 +1142,6 @@ body{
 
         #missions-image{
             padding-top: 40px;
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: center;
-            // align-content: center;
-            // align-items: center;
-            // height: 1000px;
         }
     }
     #branch{
@@ -1180,107 +1169,10 @@ body{
         }
     }
 
-    // h1{
-    //     font-family: "GothamBold",sans-serif;
-    //     font-size: 40px;
-    //     text-align: center;
-    //     font-weight: bold;
-    //     //margin-bottom: 5%;
-    //     color: rgb(100, 100, 100);
-
-    //     @media screen and (max-width: 480px){
-    //         font-size: 30px;
-    //     }
-    
-    // }
-
 
 }
-// #department-wrapper{
-//     margin-top: 80px;
-//     height: 400px;
-
-//     // #scroll-menu{
-//     //     position: fixed;
-//     //     right: 0;
-//     // }
-
-//     #missions,#outreach{
-//         padding: 20px;
-//         font-family: "GothamRoundedLight",sans-serif; 
 
 
-//         h1{
-//             font-size: 24px;
-//             font-family: "GothamMedium",sans-serif;
-//             letter-spacing: -1px;
-//             text-align: left;
-//         }
-//         h3{
-//             font-size: 18px;
-//             text-align: center;
-//             font-weight: bold;
-//             margin-top: 5%;
-//         }
-//         // p{
-//         //     font-family: "GothamRoundedLight",sans-serif; 
-//         // }
-
-//         .tabs{
-//             margin-top: 3%;
-//             font-family: "GothamRoundedLight",sans-serif;
-//             .indicator{
-//                 background: $teal;
-//             }
-//             li{
-//                 width: auto;
-                
-//                 a{
-//                     color: $teal;
-//                     &:hover{
-//                         text-decoration: none;
-//                         color: $teal;
-//                     }
-//                     &:active,&:focus{
-//                         text-decoration: none;
-//                         color: $teal;
-//                         border-color: $teal 
-//                     }
-
-                    
-//                 }
-//             }
-//         }
-
-//         #test-swipe-1,#test-swipe-2,#test-swipe-3,#test-swipe-4{
-//             //border: 1px solid $light-blue;
-//             padding: 20px;
-//             height: 150px;
-//             background: $light-blue;
-//             //opacity: 0.3;
-//             color: white;
-//             margin-bottom: 20px;
-//         }
-//     }
-
-//     #outreach{
-//         // display: flex;
-//         // flex-direction: row;
-//         height: 500px;
-//         div{
-//             div:last-child{
-//                 height: 500px;
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-content: center;
-//                 justify-content: center;
-//                 //border: 1px solid
-//                 //align-items: center;
-//             }
-//         }
-        
-//     }
-// }
 
 //---------------------------   keyframes ----------------------
 @keyframes fadeIn{
@@ -1449,250 +1341,4 @@ body{
     text-rendering: optimizeLegibility; 
 }
 
-
-
-
-// .slider-item{
-//     background-position-x: right;
-//     background-repeat: no-repeat;
-//     background-size: 50% 100%;
-//     padding-left: 50px;
-//     background-color: $teal;
-    
-    
-
-//     hr{
-//         width: 20%;
-//         color: white;  
-//     }
-
-//     p{
-//         margin-top: 40px;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase;
-//     }
-// }
-// .carousel.carousel-slider{
-//     top: 60px;
-// }
-
-// #image-one{
-//     background-image: url('img/RevJohn_CroffetDirector.jpg');
-
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase;
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
-
-// #image-two{
-//     background-image: url('img/Kwesi_DepuDirector.jpg');
-    
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase;
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
-
-// #image-three{
-//     background-image: url('img/Kate_MissionsCoord.jpg');
-
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase; 
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
-
-// #image-four{
-//     background-image: url('img/Melvin_Finance.jpg');
-    
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase; 
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
-
-// #image-five{
-//     background-image: url('img/ErnestAwutey.JPG');
-    
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase; 
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
-
-// #image-six{
-//     background-image: url('img/MrsGeorgina.jpg');
-    
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase; 
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
-
-// #image-seven{
-//     background-image: url('img/AkuaAmankwah.jpg');
-    
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase; 
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
-
-// #image-eight{
-//     background-image: url('img/MartinAdofo.jpg');
-    
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase; 
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
-
-
-// #image-nine{
-//     background-image: url('img/VeronicaArkoh.jpg');
-    
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase; 
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
-
-// #image-ten{
-//     background-image: url('img/SolomonOwusu.jpg');
-    
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase; 
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
-
-// #image-eleven{
-//     background-image: url('img/AtoAcquah.jpg');
-    
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase; 
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
-
-// #image-twelve{
-//     background-image: url('img/CynthiaBaaba.jpg');
-    
-//     p{
-//         margin-top: 30%;
-//         font-size: 50px;
-//         font-family: "GothamUltra",sans-serif;
-//         color: black;
-//         text-transform: uppercase; 
-
-//         line-height: 50px;
-//         strong{
-//             font-size: 30px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-// }
 

@@ -14,6 +14,12 @@ $( document ).ready(function(){
     $("#homepage-section").css("height",height);
     $("#homepage-section img").css("height",height);
     $("#homepage-section.carousel.carousel-slider.initialized").css("height",height);
+
+    if(width<768){
+        $("#homepage-section").css("height",height/2);
+        $("#homepage-section img").css("height",height/2);
+        $("#homepage-section.carousel.carousel-slider.initialized").css("height",height/2);  
+    }
     console.log("WIDTH: " +width);
     console.log("HEIGHT: " +height);
     //$("body").css("width",width)

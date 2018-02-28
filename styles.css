@@ -514,11 +514,10 @@ body {
     font-family: "GothamLight",sans-serif;
     margin-top: 0%;
     margin-bottom: 2%;
-    font-size: 16px; }
+    font-size: 12px; }
   #footer #copyright {
     color: white;
     font-family: "GothamBook",sans-serif;
-    font-size: 16px;
     margin-top: 0%;
     margin-bottom: 2%; }
   @media screen and (max-width: 480px) {
